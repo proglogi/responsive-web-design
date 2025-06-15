@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="header">
+      <h1 id="title" class="text-center">Survey Form</h1>
+      <p id="description" class="description text-center">
+        Hello, stranger. Thank you for coming!
+      </p>
+    <header>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label" for="name">Name: <input id="name" type="text" placeholder="Insert your name here" required></label>
+        <label id="email-label" for="email">E-mail: <input id="email" type="email" placeholder="email@email.com" required></label>
+        <label id="number-label" for="number">Age (optional): <input id="number" type="number" pattern="[0-9]" min="18" max="120" placeholder="22"></label>
+
+        <label id="answers">Would you watch 'Mr. Robot', the tv serie?</label>
+        <label><input id="answers" name="negative" class="inline" type="radio" value="1">No, never.</label>
+        <label><input id="answers" name="affirmative" class="inline" type="radio" value="2">Yeah, it's actually in my watch list!</label>
+        <label><input id="answers" name="nsure" class="inline" type="radio" value="2">Maybe</label>
+      </fieldset>
+
+      <fieldset>
+        <label>Are you a student?
+          <select id="dropdown">
+            <option>Select an option</option>
+            <option>Yes</option>
+            <option>No</option>
+          </select>
+        </label>
+        <label id="answers">Have you answered this form before?</label>
+        <label><input id="answers" name="negative" class="inline" type="radio" value="1">No, it's the first time</label>
+        <label><input id="answers" name="affirmative" class="inline" type="radio" value="2">Yes, I already have.</label>
+        <label><input id="answers" name="nsure" class="inline" type="radio" value="2">Do not remember/ Do not know</label>
+      </fieldset>
+
+      <fieldset>
+        <legend id="topics" >Which of the topics below would you like to study? (Check all that apply)</legend>
+          <label><input class="inline" type="checkbox" value="1">Front-end Development</label>
+          <label><input class="inline" type="checkbox" value="2">Back-end Development</label>
+          <label><input class="inline" type="checkbox" value="3">Project Management</label>
+          <label><input class="inline" type="checkbox" value="4">Fullstack Development</label>
+          <label><input class="inline" type="checkbox" value="5">UI/UX Design</label>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <label for="comments">If you have anything to add, please, describe down bellow:
+          <textarea name="" id="comments"></textarea>
+        </label>
+      </fieldset>
+
+      <input id="submit" type="submit" value="Submit">
+    </form>
+  </body>
+</html>
